@@ -1,0 +1,38 @@
+i = 0;
+while (i < 10) {
+  v[i] = i * i;
+  i = i + 1
+};
+
+w = v;
+
+out(tostr(v == w));
+
+w[0] = 100;
+out(tostr(v));
+out(tostr(w));
+out(tostr(v == w));
+
+i = 0;
+while (i < 10) {
+  a[i] = i * i;
+  b[i] = a[i];
+  i = i + 1
+};
+
+out(tostr(a == b));
+
+b[0] = 100;
+out(tostr(a));
+out(tostr(b));
+
+out(tostr(a == b));
+
+t[4] = "42";
+t[3] = 42;
+t[2] = "4" . "2";
+t[1] = tostr((((34 + 1) + 7) * 2) / 2) . "";
+out(t[4]);
+out(tostr(t[3]));
+out(t[2]);
+out(t[1])
